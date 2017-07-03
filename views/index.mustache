@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Mustache</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+    <h2>Index</h2>
+     <div class="robot-wrapper">
+         {{#users}}
+         
+         <div class=robot-container>
+        <image src="{{avatar}}">
+        <div class="name"><a href="{{id}}">{{name}}</a></div>
+         {{#job}}
+         <div class="job">{{job}}</div>
+         {{/job}}
+         {{^job}}
+         <div class='nojob'>Available for Hire</div>
+         {{/job}}
+        <div class="company">{{company}}</div>
+        </div>
+        {{/users}}
+     </div>
+
+
+
+    </body>
+</html>

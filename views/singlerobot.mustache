@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Individual Robot</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+    <div class=robot-wrapper-single>
+    <div class="robot-wrapper-2">
+        {{#users}}
+         <image class="roundimg" src="{{avatar}}">
+         <div>
+        <h3>{{name}}</h3>
+
+        
+        {{#address}}{{#job}}
+        <div class="company">{{city}}, {{country}} | {{job}}, {{company}}</div>
+        {{/job}}
+
+
+
+        {{^job}}
+        <div>{{city}}, {{country}} | <b style="color:red">Available for Hire</b>, {{company}}</div>
+        {{/job}}{{/address}}
+       
+
+
+         <div class="contact">{{email}} | {{phone}}</div>
+         </div>
+    </div>
+    
+    <div class="education_skills">
+    {{#university}}
+        <div class="education"><b>Education  </b>{{university}}</div>
+    {{/university}}
+    {{^university}}
+    {{/university}}
+
+        <div class="skills"><b>Skills</b>  {{skills}}</div>
+    </div>    
+    </div>
+    </div>
+    {{/users}}
+    </body>
+</html>
