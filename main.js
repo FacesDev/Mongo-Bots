@@ -14,18 +14,6 @@ application.set('view engine', 'mustache')
 application.use(express.static(__dirname + '/public'));
 
 
-
-
-
-
-
-application.engine('mustache', mustacheExpress());
-application.set('/views', './views')
-application.set('view engine', 'mustache')
-application.use(express.static(__dirname + '/public'));
-
-
-
 application.use(homepageController);
 application.use(usersController);
 

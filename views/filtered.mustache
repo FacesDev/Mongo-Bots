@@ -4,15 +4,14 @@
         <link rel="stylesheet" type="text/css" href="./styles.css" />
     </head>
     <body>
-        <a class="nav" href="/filtered/unemployed">Unemployed Bots</a>
-        <a class="nav" href="/filtered/employed">Employed Bots</a>
-    <h2>Index</h2>
+    
+    <h2></h2>
      <div class="robot-wrapper">
          {{#users}}
          
          <div class=robot-container>
         <image src="{{avatar}}">
-        <div class="name"><a href="/{{id}}">{{name}}</a></div>
+        <div class="name"><a href="{{id}}">{{name}}</a></div>
          {{#job}}
          <div class="job">{{job}}</div>
          {{/job}}

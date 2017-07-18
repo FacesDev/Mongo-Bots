@@ -13,22 +13,4 @@ router.get('/', function (request, response) {
         database.close();
     });
 });
-// var findDocuments = function(db, callback) {
-//   var collection = db.collection('robots');
-//   collection.find({}).toArray(function(err, docs) {
-//     assert.equal(err, null);
-//     callback(docs);
-//   });
-// }
-
-// router.get('/', function (request, response) {
-//   MongoClient.connect(url, function(err, db) {
-//     findDocuments(db, function(docs) {
-//       response.render('index', {users: docs});
-//       db.close();
-//     });
-//   });
-// });
-
-
 module.exports = router;
